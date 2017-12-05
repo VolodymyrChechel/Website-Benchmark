@@ -1,0 +1,14 @@
+﻿@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<div class="row">
+    @using (Html.BeginForm())
+    {
+        <div class="col-md-3"> <label for="url"> Enter URL </label> </div>
+        <div class="col-md-6"> <input id="url" name="url" type="text" placeholder="Enter URL here"> </div>
+        <div class="col-md-3"> <input type="submit" value="Proceed"> </div>
+    }
+</div>
