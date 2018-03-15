@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -65,6 +65,8 @@ namespace WebsiteBenchmark.Util
 
             var watch = System.Diagnostics.Stopwatch.StartNew();
             var hrefTimings = new List<Tuple<string, double>>();
+			
+			// trying to assess time of all pages
             foreach (var href in hrefs)
             {
                 watch.Restart();
